@@ -17,6 +17,7 @@ public class Topic07_Xpath_Technical {
   @BeforeClass
   public void beforeClass() {
 	  driver = new FirefoxDriver();
+	  
 	  driver.manage().window().maximize();
 	  driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 	  
