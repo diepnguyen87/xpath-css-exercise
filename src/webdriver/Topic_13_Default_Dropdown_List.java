@@ -29,7 +29,7 @@ public class Topic_13_Default_Dropdown_List {
 	}
 	
 	@Test(enabled = false)
-	public void TC_01() {
+	public void TC_01_SingleDefaultDropDownList() {
 		driver.get("https://automationfc.github.io/basic-form/index.html");
 		
 		Select job1Select = new Select(driver.findElement(By.id("job1")));
@@ -71,9 +71,8 @@ public class Topic_13_Default_Dropdown_List {
 		Assert.assertEquals(job2Select.getAllSelectedOptions().size(), 0);
 	}
 	
-
-	@Test
-	public void TC_02() {
+	@Test(enabled = false)
+	public void TC_02_SingleDefaultDropDownList() {
 		driver.get("https://demo.nopcommerce.com");
 		
 		//Click Register
@@ -111,6 +110,38 @@ public class Topic_13_Default_Dropdown_List {
 		Assert.assertEquals(driver.findElement(By.className("result")).getText(), "Your registration completed");
 	}
 	
+	@Test
+	public void TC_03_MultipleDefaultDropDownList() {
+		//Open the app under test
+		driver.get("http://multiple-select.wenzhixin.net.cn/examples#basic.html");
+		
+		//Switch to iframe to able to catch elements on it
+		driver.switchTo().frame(driver.findElement(By.tagName("iframe")));
+		
+		//New intial Select
+		Select dd = new Select(driver.findElement(By.xpath("//label[contains(text(),'Basic Select')]/following-sibling::div[@class='col-sm-10']/select")));
+		
+		//Save expected items need to select on dropdown list
+		String[] expectedList = {"February", "August", "December"};
+		
+		//Select expected items
+		for(String expected : expectedList) {
+			dd.selectByVisibleText(expected);
+		}
+	
+		//Verify
+		List<WebElement> selectedItems = dd.getAllSelectedOptions();
+		for(WebElement item : selectedItems) {
+			for(String expected : expectedList) {
+				if(item.getText().equals(expected)) {
+					Assert.assertTrue(true);
+					break;
+				}
+			}
+		}
+		
+	}
+	
 	private int getRandomNumber() {
 		Random random = new Random();
 		return random.nextInt(999999);
@@ -118,6 +149,6 @@ public class Topic_13_Default_Dropdown_List {
 	
 	@AfterClass
 	public void afterClass() {
-		driver.quit();
+		//driver.quit();
 	}
 }

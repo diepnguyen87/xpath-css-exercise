@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="webdriver.Topic_11_Web_Element_API">
+      <class name="webdriver.Topic_14_Custom_Dropdown_List">
         <methods>
-          <include name="beforeClass"/>
+          <include name="TC_03_React"/>
           <include name="afterClass"/>
-          <include name="TC_02_Verify_Element_Enabled"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- webdriver.Topic_11_Web_Element_API -->
+      </class> <!-- webdriver.Topic_14_Custom_Dropdown_List -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
