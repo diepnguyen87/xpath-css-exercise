@@ -3,10 +3,13 @@ package webdriver;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 
+import static org.testng.Assert.fail;
+
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -24,7 +27,8 @@ public class Topic_15_Button_Radio_Checkbox {
 	WebDriver driver;
 	WebDriverWait explicitWait;
 	JavascriptExecutor jsExecutor;
-	
+	Alert alert;
+	By resultBy = By.id("result");
 	
 	@BeforeClass
 	public void beforeClass() {
@@ -89,17 +93,20 @@ public class Topic_15_Button_Radio_Checkbox {
 		Assert.assertTrue(carEngineRadio.isSelected());
 	}
 	
-	@Test
+	@Test(enabled = true)
 	public void TC_03_Custom_Checkbox_Radio() {
 		//Open the app under test
 		driver.get("https://material.angular.io/components/radio/examples");
 		
 		//Select 'Summer'
-		WebElement seasonRadio = driver.findElement(By.xpath("//div[contains(text(),'Summer')]/preceding-sibling::div/input"));
-		seasonRadio.click();
+		//WebElement seasonRadio = driver.findElement(By.xpath("//div[contains(text(),'Summer')]/preceding-sibling::div/input"));
+		driver.findElement(By.xpath("//input[@value='Summer']")).click();;
+		
+		//seasonRadio.click();
 		
 		//Verify 'Summer' is selected
-		Assert.assertTrue(seasonRadio.isSelected());
+		//Assert.assertTrue(seasonRadio.isSelected());
+		Assert.assertTrue(driver.findElement(By.xpath("//input[@value='Summer']")).isSelected());
 		
 		//Open new app under test
 		driver.get("https://material.angular.io/components/checkbox/examples");
@@ -121,8 +128,114 @@ public class Topic_15_Button_Radio_Checkbox {
 		//Verify 'Checked' and 'Indeterminate' are unselected
 		Assert.assertFalse(checkedChk.isSelected());
 		Assert.assertFalse(indeterminateChk.isSelected());
+	}
+	
+	@Test(enabled = false)
+	public void TC_04_Accept_Alert() {
+		//Open the app under test
+		driver.get("https://automationfc.github.io/basic-form/index.html");
+		sleepInSecond(2);
 		
+		//click on 'Click for JS Alert'
+		WebElement jsAlertButton = driver.findElement(By.xpath("//button[text()='Click for JS Alert']"));
+		jsAlertButton.click();
+		
+		//wait 20s to load the web fully
+		explicitWait.until(ExpectedConditions.alertIsPresent());
+	
+		//Switch to alert
+		alert = driver.switchTo().alert();
+		
+		//Verify message in alert
+		Assert.assertEquals(alert.getText(), "I am a JS Alert");
+		
+		//Accep alert
+		alert.accept();
+		
+		//Verify message in result
+		Assert.assertEquals(driver.findElement(resultBy).getText(), "You clicked an alert successfully");
+	}
 
+	@Test(enabled = false)
+	public void TC_05_Confirm_Alert() {
+		//Open the app under test
+		driver.get("https://automationfc.github.io/basic-form/index.html");
+		sleepInSecond(2);
+		
+		//click on 'Click for JS Confirm'
+		WebElement jsConfirmButton = driver.findElement(By.xpath("//button[text()='Click for JS Confirm']"));
+		jsConfirmButton.click();
+	
+		//wait 20s to load the web fully
+		explicitWait.until(ExpectedConditions.alertIsPresent());
+		
+		//Switch to alert
+		alert = driver.switchTo().alert();
+		
+		//Verify message in alert
+		Assert.assertEquals(alert.getText(), "I am a JS Confirm");
+		
+		//Cancel alert
+		alert.dismiss();
+		
+		//Verify message in result
+		Assert.assertEquals(driver.findElement(resultBy).getText(), "You clicked: Cancel");
+	
+	
+	}
+	
+	@Test(enabled = false)
+	public void TC_06_Prompt_Alert() {
+		//Open the app under test
+		driver.get("https://automationfc.github.io/basic-form/index.html");
+		sleepInSecond(2);
+		
+		//click on 'Click for JS Alert'
+		WebElement jsPromptButton = driver.findElement(By.xpath("//button[text()='Click for JS Prompt']"));
+		jsPromptButton.click();
+		
+		//wait 20s to load the web fully
+		explicitWait.until(ExpectedConditions.alertIsPresent());
+	
+		//Switch to alert
+		alert = driver.switchTo().alert();
+		
+		//Verify message in alert
+		Assert.assertEquals(alert.getText(), "I am a JS prompt");
+		
+		//Enter random text into prompt
+		String message = "Hello World";
+		alert.sendKeys(message);
+		
+		//accep alert
+		alert.accept();
+		
+		//Verify message in result
+		Assert.assertEquals(driver.findElement(resultBy).getText(), "You entered: " + message);
+	
+	}
+	
+	@Test(enabled = false)
+	public void TC_07_Authentication_Alert() {
+		//Open the app under test
+		driver.get("http://the-internet.herokuapp.com");
+		
+		//get link in href attribue
+		String basicAuthURL = driver.findElement(By.xpath("//a[text()='Basic Auth']")).getAttribute("href");
+		
+		//get url with username and password
+		String authenticatedUrl = getURLWithUserNameAndPassword(basicAuthURL, "admin", "admin");
+		
+		driver.get(authenticatedUrl);
+		
+		//Verify messsage after login successfully
+		Assert.assertTrue(driver.findElement(By.xpath("//p[contains(text(),'Congratulations! You must have the proper credentials.')]")).isDisplayed());
+	}
+	
+	private String getURLWithUserNameAndPassword(String url, String userName, String password) {
+		String[] stringList = url.split("//");
+		url = stringList[0] + userName + ":" + password + "@" + stringList[1];
+		return url;
 	}
 	
 	private void clickElementByJS(WebElement element) {

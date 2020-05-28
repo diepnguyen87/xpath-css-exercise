@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="webdriver.Topic_14_Custom_Dropdown_List">
+      <class name="webdriver.Topic_17_User_Interaction">
         <methods>
-          <include name="TC_03_React"/>
-          <include name="afterClass"/>
           <include name="beforeClass"/>
+          <include name="TC_07_Drag_And_Drop_HTML5_Xpath"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- webdriver.Topic_14_Custom_Dropdown_List -->
+      </class> <!-- webdriver.Topic_17_User_Interaction -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

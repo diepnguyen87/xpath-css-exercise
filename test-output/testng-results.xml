@@ -1,89 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="285404" started-at="2020-05-25T07:42:36Z" finished-at="2020-05-25T07:47:21Z">
+  <suite name="Default suite" duration-ms="7202" started-at="2020-05-27T10:08:27Z" finished-at="2020-05-27T10:08:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="285404" started-at="2020-05-25T07:42:36Z" finished-at="2020-05-25T07:47:21Z">
-      <class name="webdriver.Topic_14_Custom_Dropdown_List">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:webdriver.Topic_14_Custom_Dropdown_List@174d20a]" name="beforeClass" is-config="true" duration-ms="2824" started-at="2020-05-25T14:42:36Z" finished-at="2020-05-25T14:42:38Z">
+    <test name="Default test" duration-ms="7202" started-at="2020-05-27T10:08:27Z" finished-at="2020-05-27T10:08:34Z">
+      <class name="webdriver.Topic_17_User_Interaction">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:webdriver.Topic_17_User_Interaction@7921b0a2]" name="beforeClass" is-config="true" duration-ms="3768" started-at="2020-05-27T17:08:27Z" finished-at="2020-05-27T17:08:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="FAIL" signature="TC_03_React()[pri:0, instance:webdriver.Topic_14_Custom_Dropdown_List@174d20a]" name="TC_03_React" duration-ms="282551" started-at="2020-05-25T14:42:38Z" finished-at="2020-05-25T14:47:21Z">
-          <exception class="org.openqa.selenium.ElementNotVisibleException">
-            <message>
-              <![CDATA[Element is not currently visible and so may not be interacted with
-Command duration or timeout: 15.10 seconds
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'Admin', ip: '192.168.65.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 48c3e967-80c5-471d-ac16-139142e756df]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
-Command duration or timeout: 15.10 seconds
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'Admin', ip: '192.168.65.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 48c3e967-80c5-471d-ac16-139142e756df
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
-	at webdriver.Topic_14_Custom_Dropdown_List.selectItemInCustomDropdownList(Topic_14_Custom_Dropdown_List.java:134)
-	at webdriver.Topic_14_Custom_Dropdown_List.TC_03_React(Topic_14_Custom_Dropdown_List.java:91)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'Admin', ip: '192.168.65.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: driver.version: unknown
-	at <anonymous class>.fxdriver.preconditions.visible(file:///C:/Users/Admin/AppData/Local/Temp/anonymous2488936016844107743webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
-	at <anonymous class>.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/Admin/AppData/Local/Temp/anonymous2488936016844107743webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Admin/AppData/Local/Temp/anonymous2488936016844107743webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/Admin/AppData/Local/Temp/anonymous2488936016844107743webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
+        <test-method status="PASS" signature="TC_07_Drag_And_Drop_HTML5_Xpath()[pri:0, instance:webdriver.Topic_17_User_Interaction@7921b0a2]" name="TC_07_Drag_And_Drop_HTML5_Xpath" duration-ms="3420" started-at="2020-05-27T17:08:31Z" finished-at="2020-05-27T17:08:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_03_React -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:webdriver.Topic_14_Custom_Dropdown_List@174d20a]" name="afterClass" is-config="true" duration-ms="1" started-at="2020-05-25T14:47:21Z" finished-at="2020-05-25T14:47:21Z">
+        </test-method> <!-- TC_07_Drag_And_Drop_HTML5_Xpath -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:webdriver.Topic_17_User_Interaction@7921b0a2]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-05-27T17:08:34Z" finished-at="2020-05-27T17:08:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- webdriver.Topic_14_Custom_Dropdown_List -->
+      </class> <!-- webdriver.Topic_17_User_Interaction -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
