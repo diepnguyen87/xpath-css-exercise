@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12161" started-at="2020-05-29T14:11:05Z" finished-at="2020-05-29T14:11:17Z">
+  <suite name="Default suite" duration-ms="28107" started-at="2020-05-31T14:10:03Z" finished-at="2020-05-31T14:10:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12161" started-at="2020-05-29T14:11:05Z" finished-at="2020-05-29T14:11:17Z">
-      <class name="webdriver.Topic_20_Iframe_Window">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:webdriver.Topic_20_Iframe_Window@6a024a67]" name="beforeClass" is-config="true" duration-ms="3075" started-at="2020-05-29T21:11:05Z" finished-at="2020-05-29T21:11:08Z">
+    <test name="Default test" duration-ms="28107" started-at="2020-05-31T14:10:03Z" finished-at="2020-05-31T14:10:31Z">
+      <class name="webdriver.Topic_21_JavaScript_Executor">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:webdriver.Topic_21_JavaScript_Executor@23ceabc1]" name="beforeClass" is-config="true" duration-ms="4036" started-at="2020-05-31T21:10:03Z" finished-at="2020-05-31T21:10:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="TC_04_Window_3()[pri:0, instance:webdriver.Topic_20_Iframe_Window@6a024a67]" name="TC_04_Window_3" duration-ms="9072" started-at="2020-05-29T21:11:08Z" finished-at="2020-05-29T21:11:17Z">
+        <test-method status="PASS" signature="TC_03_Create_Account()[pri:0, instance:webdriver.Topic_21_JavaScript_Executor@23ceabc1]" name="TC_03_Create_Account" duration-ms="24050" started-at="2020-05-31T21:10:07Z" finished-at="2020-05-31T21:10:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_04_Window_3 -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:webdriver.Topic_20_Iframe_Window@6a024a67]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-05-29T21:11:17Z" finished-at="2020-05-29T21:11:17Z">
+        </test-method> <!-- TC_03_Create_Account -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:webdriver.Topic_21_JavaScript_Executor@23ceabc1]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-05-31T21:10:31Z" finished-at="2020-05-31T21:10:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- webdriver.Topic_20_Iframe_Window -->
+      </class> <!-- webdriver.Topic_21_JavaScript_Executor -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

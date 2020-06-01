@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="webdriver.Topic_20_Iframe_Window">
+      <class name="webdriver.Topic_21_JavaScript_Executor">
         <methods>
-          <include name="TC_03_Window_2"/>
+          <include name="TC_03_Create_Account"/>
           <include name="afterClass"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- webdriver.Topic_20_Iframe_Window -->
+      </class> <!-- webdriver.Topic_21_JavaScript_Executor -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

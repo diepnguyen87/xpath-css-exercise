@@ -192,7 +192,6 @@ public class Topic_21_JavaScript_Executor {
 		//sleepInSecond(6);
 		//Verify user back to homepage after logout successfully
 		Assert.assertTrue(driver.findElement(By.xpath("//h2[contains(text(),'This is demo site for')]")).isDisplayed());
-		driver.findElement(By.xpath("")).is
 	}
 	
 	// Browser
