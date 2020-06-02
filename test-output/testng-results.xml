@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28107" started-at="2020-05-31T14:10:03Z" finished-at="2020-05-31T14:10:31Z">
+  <suite name="Default suite" duration-ms="98658" started-at="2020-06-02T05:20:41Z" finished-at="2020-06-02T05:22:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28107" started-at="2020-05-31T14:10:03Z" finished-at="2020-05-31T14:10:31Z">
-      <class name="webdriver.Topic_21_JavaScript_Executor">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:webdriver.Topic_21_JavaScript_Executor@23ceabc1]" name="beforeClass" is-config="true" duration-ms="4036" started-at="2020-05-31T21:10:03Z" finished-at="2020-05-31T21:10:07Z">
+    <test name="Default test" duration-ms="98658" started-at="2020-06-02T05:20:41Z" finished-at="2020-06-02T05:22:19Z">
+      <class name="webdriver.Topic_22_Upload_File">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:webdriver.Topic_22_Upload_File@6d78f375]" name="beforeClass" is-config="true" duration-ms="4170" started-at="2020-06-02T05:20:41Z" finished-at="2020-06-02T05:20:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="TC_03_Create_Account()[pri:0, instance:webdriver.Topic_21_JavaScript_Executor@23ceabc1]" name="TC_03_Create_Account" duration-ms="24050" started-at="2020-05-31T21:10:07Z" finished-at="2020-05-31T21:10:31Z">
+        <test-method status="PASS" signature="TC_04()[pri:0, instance:webdriver.Topic_22_Upload_File@6d78f375]" name="TC_04" duration-ms="94464" started-at="2020-06-02T05:20:45Z" finished-at="2020-06-02T05:22:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_03_Create_Account -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:webdriver.Topic_21_JavaScript_Executor@23ceabc1]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-05-31T21:10:31Z" finished-at="2020-05-31T21:10:31Z">
+        </test-method> <!-- TC_04 -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:webdriver.Topic_22_Upload_File@6d78f375]" name="afterClass" is-config="true" duration-ms="1" started-at="2020-06-02T05:22:19Z" finished-at="2020-06-02T05:22:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- webdriver.Topic_21_JavaScript_Executor -->
+      </class> <!-- webdriver.Topic_22_Upload_File -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

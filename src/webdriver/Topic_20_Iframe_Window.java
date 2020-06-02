@@ -28,7 +28,7 @@ public class Topic_20_Iframe_Window {
 	public void beforeClass() {
 		FirefoxProfile profile = new FirefoxProfile();
 		profile.setPreference("dom.webnotification.enabled", false);
-		driver = new FirefoxDriver(profile);
+		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 	}

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webdriver.Topic_21_JavaScript_Executor">
+      <class name="webdriver.Topic_22_Upload_File">
         <methods>
-          <include name="TC_03_Create_Account"/>
+          <include name="TC_04"/>
           <include name="afterClass"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- webdriver.Topic_21_JavaScript_Executor -->
+      </class> <!-- webdriver.Topic_22_Upload_File -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
