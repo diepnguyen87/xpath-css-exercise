@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+  <test name="Default test(failed)">
     <classes>
-      <class name="webdriver.Topic_22_Upload_File">
+      <class name="webdriver.Topic_23_WebDriver_Wait">
         <methods>
-          <include name="TC_04"/>
           <include name="afterClass"/>
+          <include name="TC_08_Fluent_Wait"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- webdriver.Topic_22_Upload_File -->
+      </class> <!-- webdriver.Topic_23_WebDriver_Wait -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

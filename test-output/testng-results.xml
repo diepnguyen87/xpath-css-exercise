@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="98658" started-at="2020-06-02T05:20:41Z" finished-at="2020-06-02T05:22:19Z">
+  <suite name="Default suite" duration-ms="16579" started-at="2020-06-05T13:18:46Z" finished-at="2020-06-05T13:19:02Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="98658" started-at="2020-06-02T05:20:41Z" finished-at="2020-06-02T05:22:19Z">
-      <class name="webdriver.Topic_22_Upload_File">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:webdriver.Topic_22_Upload_File@6d78f375]" name="beforeClass" is-config="true" duration-ms="4170" started-at="2020-06-02T05:20:41Z" finished-at="2020-06-02T05:20:45Z">
+    <test name="Default test" duration-ms="16579" started-at="2020-06-05T13:18:46Z" finished-at="2020-06-05T13:19:02Z">
+      <class name="webdriver.Topic_23_WebDriver_Wait">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:webdriver.Topic_23_WebDriver_Wait@174d20a]" name="beforeClass" is-config="true" duration-ms="3214" started-at="2020-06-05T20:18:46Z" finished-at="2020-06-05T20:18:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="TC_04()[pri:0, instance:webdriver.Topic_22_Upload_File@6d78f375]" name="TC_04" duration-ms="94464" started-at="2020-06-02T05:20:45Z" finished-at="2020-06-02T05:22:19Z">
+        <test-method status="PASS" signature="TC_08_Fluent_Wait()[pri:0, instance:webdriver.Topic_23_WebDriver_Wait@174d20a]" name="TC_08_Fluent_Wait" duration-ms="13350" started-at="2020-06-05T20:18:49Z" finished-at="2020-06-05T20:19:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_04 -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:webdriver.Topic_22_Upload_File@6d78f375]" name="afterClass" is-config="true" duration-ms="1" started-at="2020-06-02T05:22:19Z" finished-at="2020-06-02T05:22:19Z">
+        </test-method> <!-- TC_08_Fluent_Wait -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:webdriver.Topic_23_WebDriver_Wait@174d20a]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-06-05T20:19:02Z" finished-at="2020-06-05T20:19:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- webdriver.Topic_22_Upload_File -->
+      </class> <!-- webdriver.Topic_23_WebDriver_Wait -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
