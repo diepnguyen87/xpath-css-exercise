@@ -1,25 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16579" started-at="2020-06-05T13:18:46Z" finished-at="2020-06-05T13:19:02Z">
+  <suite name="Suite" duration-ms="63" started-at="2020-06-06T11:29:29Z" finished-at="2020-06-06T11:29:29Z">
     <groups>
+      <group name="product">
+        <method signature="TNT_1.TC_01()[pri:0, instance:testNG.TNT_1@573f2bb1]" name="TC_01" class="testNG.TNT_1"/>
+        <method signature="TNT_2.TC_02()[pri:0, instance:testNG.TNT_2@5ae9a829]" name="TC_02" class="testNG.TNT_2"/>
+      </group> <!-- product -->
+      <group name="user">
+        <method signature="TNT_1.TC_02()[pri:0, instance:testNG.TNT_1@573f2bb1]" name="TC_02" class="testNG.TNT_1"/>
+        <method signature="TNT_2.TC_01()[pri:0, instance:testNG.TNT_2@5ae9a829]" name="TC_01" class="testNG.TNT_2"/>
+      </group> <!-- user -->
     </groups>
-    <test name="Default test" duration-ms="16579" started-at="2020-06-05T13:18:46Z" finished-at="2020-06-05T13:19:02Z">
-      <class name="webdriver.Topic_23_WebDriver_Wait">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:webdriver.Topic_23_WebDriver_Wait@174d20a]" name="beforeClass" is-config="true" duration-ms="3214" started-at="2020-06-05T20:18:46Z" finished-at="2020-06-05T20:18:49Z">
+    <test name="Test" duration-ms="63" started-at="2020-06-06T11:29:29Z" finished-at="2020-06-06T11:29:29Z">
+      <class name="testNG.TNT_2">
+        <test-method status="PASS" signature="TC_01()[pri:0, instance:testNG.TNT_2@5ae9a829]" name="TC_01" duration-ms="1" started-at="2020-06-06T11:29:29Z" finished-at="2020-06-06T11:29:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="TC_08_Fluent_Wait()[pri:0, instance:webdriver.Topic_23_WebDriver_Wait@174d20a]" name="TC_08_Fluent_Wait" duration-ms="13350" started-at="2020-06-05T20:18:49Z" finished-at="2020-06-05T20:19:02Z">
+        </test-method> <!-- TC_01 -->
+        <test-method status="PASS" signature="TC_02()[pri:0, instance:testNG.TNT_2@5ae9a829]" name="TC_02" duration-ms="5" started-at="2020-06-06T11:29:29Z" finished-at="2020-06-06T11:29:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_08_Fluent_Wait -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:webdriver.Topic_23_WebDriver_Wait@174d20a]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-06-05T20:19:02Z" finished-at="2020-06-05T20:19:02Z">
+        </test-method> <!-- TC_02 -->
+      </class> <!-- testNG.TNT_2 -->
+      <class name="testNG.TNT_1">
+        <test-method status="PASS" signature="TC_01()[pri:0, instance:testNG.TNT_1@573f2bb1]" name="TC_01" duration-ms="11" started-at="2020-06-06T11:29:29Z" finished-at="2020-06-06T11:29:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- webdriver.Topic_23_WebDriver_Wait -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- TC_01 -->
+        <test-method status="PASS" signature="TC_02()[pri:0, instance:testNG.TNT_1@573f2bb1]" name="TC_02" duration-ms="3" started-at="2020-06-06T11:29:29Z" finished-at="2020-06-06T11:29:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02 -->
+      </class> <!-- testNG.TNT_1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
